@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veg Shop Admin Page</title>
+  <title>Online Vegetable Shop Management</title>
 </head>
 <body>
-  <h1>Veg Shop Admin Page</h1>
+  <h1>Online Vegetable Shop Management</h1>
+  
   <div class="container">
-    <form action="#" onsubmit="handleFormSubmit(event)">
+    <form id="addForm">
       <label for="vegetablename">Vegetable Name:</label>
       <input type="text" id="vegetablename" required>
     
@@ -18,14 +19,13 @@
       <label for="vegetablequantity">Quantity:</label>
       <input type="number" id="vegetablequantity" required>
     
-      <button>Add Item</button>
+      <button type="submit">Add Vegetable</button>
     </form>
   </div>
 
-  <ul id="vegetablelist"></ul>
+  <ul id="vegetableList"></ul>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   <script src="index.js"></script>
-  
 </body>
 </html>
